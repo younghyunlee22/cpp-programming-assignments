@@ -107,6 +107,7 @@ Enter the weight of your ingredient in g: 200
 */
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -202,7 +203,7 @@ double getDensity(string ingredient)
     return 0.91;
   }
 
-  return -1;
+  return 0;
 }
 
 double getWeight()
@@ -226,7 +227,7 @@ double getWeight()
     }
     else if (ingredientWeight <= 0)
     {
-      cout << "Weight must be greater than 0" << endl;
+      cout << "The ingredient weight must be greater than 0." << endl;
     }
     cout << weightPrompt << endl;
     cin >> ingredientWeight;
@@ -256,7 +257,7 @@ double getVolume()
     }
     else if (ingredientVolume <= 0)
     {
-      cout << "Weight must be greater than 0" << endl;
+      cout << "The ingredient volume must be greater than 0." << endl;
     }
     cout << volumePrompt << endl;
     cin >> ingredientVolume;
@@ -281,7 +282,46 @@ double convertVolume(double volume, double density)
 
 int main()
 {
+  char convertFrom;
+  double convertedToVolume = 0.0;
+  double convertedToWeight = 0.0;
+
+  cout << "Welcome to the baking converter." << endl;
+  cout << "This program takes a baking ingredient and converts a weight to a volume unit or a volume to a weight unit." << endl;
+
+  // Get userinput for an ingredient by calling getIngredient function
   string ingredient = getIngredient();
-  cout << "Ingredient: " << ingredient << endl;
+
+  // Ask what the user wants to convert from
+  cout << "Do you want to convert from weight or volume? (Enter W or V): " << endl;
+  cin >> convertFrom;
+
+  while (!cin || !(convertFrom == 'W' || convertFrom == 'w' || convertFrom == 'V' || convertFrom == 'v'))
+  {
+    cout << "Do you want to convert from weight or volume? (Enter W or V): " << endl;
+    cin >> convertFrom;
+  }
+
+  if (convertFrom == 'W' || convertFrom == 'w')
+  {
+    // Call getWeight and getDensity functions to get user input for the info
+    double userinputWeight = getWeight();
+    double userinputDensity = getDensity(ingredient);
+
+    // Call convertWeight function to compute the volume
+    convertedToVolume = convertWeight(userinputWeight, userinputDensity);
+    cout << fixed << showpoint << setprecision(4) << userinputWeight << " g of " << ingredient << " is " << convertedToVolume << " ml" << endl;
+  }
+  else if (convertFrom == 'V' || convertFrom == 'v')
+  {
+    // Call getVolume and getDensity functions to get user input for the info
+    double userinputVolume = getVolume();
+    double userinputDensity = getDensity(ingredient);
+
+    // Call convertVolume function to compute the weight
+    convertedToWeight = convertVolume(userinputVolume, userinputDensity);
+    cout << fixed << showpoint << setprecision(4) << userinputVolume << " ml of " << ingredient << " is " << convertedToWeight << " g" << endl;
+  }
+
   return 0;
 }

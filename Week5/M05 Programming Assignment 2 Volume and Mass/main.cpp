@@ -114,7 +114,6 @@ string getIngredient()
 {
   string ingredient = "";
   string ingredientPrompt = "Enter the name of the ingredient: ";
-
   bool validIngredient = false;
 
   // Loop until a valid ingredient is entered
@@ -122,22 +121,18 @@ string getIngredient()
   {
     cout << ingredientPrompt << endl;
     // Handle input failure
-    if (!getline(cin, ingredient))
-    {
-      cout << "Input Failure. Please try again." << endl;
-      cin.clear();
-      cin.ignore(100, '\n');
-      continue;
-    }
+    getline(cin, ingredient);
 
     // Input Validation. Input must be a string.
     // Convert all characters to lowercase for non-case sensitive comparison.
     bool validCharacters = true;
-    for (char &c : ingredient)
+
+    for (int i = 0; i < ingredient.length(); i++)
     {
+      char c = ingredient[i];
       if (c >= 'A' && c <= 'Z')
       { // Convert uppercase to lowercase
-        c += 32;
+        ingredient[i] += 32;
       }
       else if (!(c >= 'a' && c <= 'z') && c != ' ')
       { // Check if the character is not a letter or space
@@ -169,6 +164,119 @@ string getIngredient()
   }
 
   return ingredient;
+}
+
+double getDensity(string ingredient)
+{
+
+  if (ingredient == "sugar")
+  {
+    return 1.59;
+  }
+  if (ingredient == "flour")
+  {
+    return 0.762;
+  }
+  if (ingredient == "cocoa powder")
+  {
+    return 1.35;
+  }
+  if (ingredient == "honey")
+  {
+    return 1.38;
+  }
+  if (ingredient == "egg")
+  {
+    return 1.031;
+  }
+  if (ingredient == "milk")
+  {
+    return 1.025;
+  }
+  if (ingredient == "water")
+  {
+    return 0.997;
+  }
+  if (ingredient == "oil")
+  {
+    return 0.91;
+  }
+
+  return -1;
+}
+
+double getWeight()
+{
+  // This function gets the weight of the ingredient from the user to convert to volume.  It does the input validation to ensure that the weight is greater than 0 and that the user input doesn't cause input failure. It returns the validated double.
+
+  double ingredientWeight;
+
+  string weightPrompt = "Enter the weight of your ingredient in g: ";
+  cout << weightPrompt << endl;
+  cin >> ingredientWeight;
+
+  while (!cin || ingredientWeight <= 0)
+  {
+
+    if (!cin)
+    {
+      cout << "You entered something that is not a number. Please Try again." << endl;
+      cin.clear();
+      cin.ignore(100, '\n');
+    }
+    else if (ingredientWeight <= 0)
+    {
+      cout << "Weight must be greater than 0" << endl;
+    }
+    cout << weightPrompt << endl;
+    cin >> ingredientWeight;
+  }
+
+  return ingredientWeight;
+}
+
+double getVolume()
+{
+  // This function gets the weight of the ingredient from the user to convert to volume.  It does the input validation to ensure that the weight is greater than 0 and that the user input doesn't cause input failure. It returns the validated double.
+
+  double ingredientVolume;
+
+  string volumePrompt = "Enter the volume of your ingredient in ml: ";
+  cout << volumePrompt << endl;
+  cin >> ingredientVolume;
+
+  while (!cin || ingredientVolume <= 0)
+  {
+
+    if (!cin)
+    {
+      cout << "You entered something that is not a number. Please Try again." << endl;
+      cin.clear();
+      cin.ignore(100, '\n');
+    }
+    else if (ingredientVolume <= 0)
+    {
+      cout << "Weight must be greater than 0" << endl;
+    }
+    cout << volumePrompt << endl;
+    cin >> ingredientVolume;
+  }
+
+  return ingredientVolume;
+}
+
+double convertWeight(double weight, double density)
+{
+  // Calculate and return the volume needed for the ingredient. formula: volume = weight / density.
+
+  return weight / density;
+}
+
+double convertVolume(double volume, double density)
+{
+  // Calculate and return the weight needed for the ingredient. formula: weight = volume * density.
+
+  return volume * density;
 }
 
 int main()

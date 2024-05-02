@@ -137,42 +137,6 @@ string printColor(carColorType carColor)
   return 0;
 }
 
-int enumValue(carColorType carColor)
-{
-
-  switch (carColor) // Take a carColorType variable
-  {
-  case SUNSET:
-    return 0; // ;
-  case CHERRY:
-    return 1;
-  case PHANTOM:
-    return 2;
-  case TITANIUM:
-    return 3;
-  case GEAUX:
-    return 4;
-  case LIGHTNING:
-    return 5;
-  case FOREST:
-    return 6;
-  case MIDNIGHT:
-    return 7;
-  case PASSION:
-    return 8;
-  case ROOT:
-    return 9;
-  case STORM:
-    return 10;
-  case OCEAN:
-    return 11;
-  case GLACIAL:
-    return 12;
-  }
-
-  return 0;
-}
-
 int main()
 {
   char orderYN;
@@ -207,12 +171,12 @@ int main()
   {
     // Output file
     ofstream outfile("order.txt");
-    // what I have: topColor, bodyColor, trimColor (enumerators)
-    // what I want: each enumerator' value
 
-    outfile << enumValue(topColor) << endl;
-    outfile << enumValue(bodyColor) << endl;
-    outfile << enumValue(trimColor) << endl;
+    // Write the value of the enumerators to the file
+
+    outfile << topColor << endl;
+    outfile << bodyColor << endl;
+    outfile << trimColor << endl;
 
     outfile.close();
   }

@@ -6,6 +6,7 @@
     "ios": "cpp",
     "istream": "cpp",
     "string": "cpp",
-    "fstream": "cpp"
+    "fstream": "cpp",
+    "typeinfo": "cpp"
   }
 }

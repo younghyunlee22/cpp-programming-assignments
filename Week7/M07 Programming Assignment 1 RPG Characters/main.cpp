@@ -20,9 +20,11 @@
 
 #include <iostream>
 #include <string>
+#include <cctype> // For tolower function
 
 using namespace std;
 
+// Creating an enum
 enum characterClassType
 {
   FIGHT,
@@ -31,6 +33,7 @@ enum characterClassType
   CLERIC
 };
 
+// Creating a struct
 struct characterType
 {
   string name;
@@ -45,16 +48,75 @@ struct characterType
   characterClassType characterClass;
 };
 
-characterClassType chooseCharacter(int characterClass)
+characterType createCharacter(const string &name, characterClassType characterClassEnum)
+{
+  characterType newCharacter;
+
+  // Set the name and class
+  newCharacter.name = name;
+  newCharacter.characterClass = characterClassEnum;
+
+  // Set the stats based on the character class
+  switch (characterClassEnum)
+  {
+  case FIGHT:
+    newCharacter.hp = 30;
+    newCharacter.mp = 0;
+    newCharacter.strength = 16;
+    newCharacter.dexterity = 10;
+    newCharacter.intelligence = 5;
+    newCharacter.speed = 8;
+    newCharacter.endurance = 15;
+    newCharacter.faith = 5;
+    break;
+
+  case ROGUE:
+    newCharacter.hp = 20;
+    newCharacter.mp = 0;
+    newCharacter.strength = 10;
+    newCharacter.dexterity = 16;
+    newCharacter.intelligence = 16;
+    newCharacter.speed = 15;
+    newCharacter.endurance = 8;
+    newCharacter.faith = 5;
+    break;
+
+  case MAGIC:
+    newCharacter.hp = 25;
+    newCharacter.mp = 20;
+    newCharacter.strength = 5;
+    newCharacter.dexterity = 10;
+    newCharacter.intelligence = 16;
+    newCharacter.speed = 16;
+    newCharacter.endurance = 5;
+    newCharacter.faith = 8;
+    break;
+
+  case CLERIC:
+    newCharacter.hp = 20;
+    newCharacter.mp = 20;
+    newCharacter.strength = 5;
+    newCharacter.dexterity = 10;
+    newCharacter.intelligence = 8;
+    newCharacter.speed = 16;
+    newCharacter.endurance = 5;
+    newCharacter.faith = 16;
+    break;
+  }
+  return newCharacter;
+}
+
+// Function to choose the character class
+characterClassType chooseCharacter()
 {
 
   characterClassType characterClassEnum;
   int characterClassNum;
 
-  cout << "1. Fighter" << endl;
-  cout << "2. Rogue" << endl;
-  cout << "3. Magic" << endl;
-  cout << "4. Cleric" << endl;
+  cout << "1. Fighter Class" << endl;
+  cout << "2. Rogue Class" << endl;
+  cout << "3. Magician Class" << endl;
+  cout << "4. Cleric Class" << endl;
 
   cin >> characterClassNum;
 
@@ -90,39 +152,87 @@ characterClassType chooseCharacter(int characterClass)
   return characterClassEnum;
 }
 
+// Function to print the character class in string
 void printCharacterClass(characterClassType characterClassEnum)
 {
   switch (characterClassEnum)
   {
   case FIGHT:
-    cout << "Fighter" << endl;
+    cout << "Fighter stats:" << endl;
     break;
   case ROGUE:
-    cout << "Rogue" << endl;
+    cout << "Rogue stats:" << endl;
     break;
   case MAGIC:
-    cout << "Magician" << endl;
+    cout << "Magician stats:" << endl;
     break;
   case CLERIC:
-    cout << "Cleric" << endl;
+    cout << "Cleric stats:" << endl;
     break;
   }
 }
 
+// Function to display the character
+void displayCharacter(const characterType &character)
+{
+  cout << character.name << " the ";
+  printCharacterClass(character.characterClass);
+  cout << "HP: " << character.hp << endl
+       << "MP: " << character.mp << endl
+       << "Strength: " << character.strength << endl
+       << "Dexterity: " << character.dexterity << endl
+       << "Intelligence: " << character.intelligence << endl
+       << "Speed: " << character.speed << endl
+       << "Endurance: " << character.endurance << endl
+       << "Faith: " << character.faith << endl;
+}
+
 int main()
 {
-
-  string characterName;
-  int characterClassNum;
-  characterClassType characterClass;
+  characterType characters[10]; // Array to store the characters
+  int characterCount = 0;
+  char userInput;
 
   cout << "Welcome to the Character Creator!" << endl;
 
-  cout << "What is your character's name: " << endl;
-  cin >> characterName;
-  cout << "What character class do you want " << characterName << " to be?" << endl;
-  characterClass = chooseCharacter(characterClassNum);
-  printCharacterClass(characterClass);
+  do
+  {
+    string characterName;
+    characterClassType characterClass;
+
+    cout << "What is your character's name: " << endl;
+    getline(cin, characterName);
+
+    cout << "What character class do you want " << characterName << " to be?" << endl;
+    characterClass = chooseCharacter();
+
+    characters[characterCount++] = createCharacter(characterName, characterClass);
+
+    cout << "Do you want to create another character (y or n)? ";
+    cin >> userInput;
+    cin.ignore(100, '\n');
+    userInput = tolower(userInput);
+
+    if (characterCount >= 10)
+    {
+      cout << "You have entered the max number of characters. The program will now exit." << endl;
+      break;
+    }
+
+    while (userInput != 'y' && userInput != 'n') // Validate the input
+    {
+      cout << "Invalid input. Please enter 'y' to continue or 'n' to stop: ";
+      cin >> userInput;
+      cin.ignore(100, '\n');
+      userInput = tolower(userInput);
+    }
+  } while (userInput == 'y');
+
+  cout << "Here are the characters you created:" << endl;
+  for (int i = 0; i < characterCount; i++)
+  {
+    displayCharacter(characters[i]);
+  }
 
   return 0;
 }

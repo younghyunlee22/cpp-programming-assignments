@@ -201,7 +201,7 @@ int main()
     highScore = scores[highScoreIndex][i];
     lowScore = scores[lowScoreIndex][i];
 
-    cout << fixed << setprecision(2);
+    cout << fixed << showpoint << setprecision(2);
     cout << "Test " << i + 1 << ":" << endl;
     cout << "Highest Score: " << highScore << endl;
     cout << "Lowest Score: " << lowScore << endl;
@@ -212,3 +212,9 @@ int main()
 
   return 0;
 }
+
+/*
+A formal parameter scoreColumn[] or score[][5] is not an array.
+It is a variable to store the address of a memory location,
+so it has no first (that is, list[0]) and last elements.
+*/

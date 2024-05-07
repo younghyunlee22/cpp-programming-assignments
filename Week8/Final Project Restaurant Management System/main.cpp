@@ -58,7 +58,53 @@ struct Order
   bool isPaid;
 };
 
+// Function prototypes
+void clearBuffer(string datatypeExpected);
+void setCustomerName(TempReservation &tempReservation);
+void setNumberOfPeople(TempReservation &tempReservation);
+void setReservationTime(TempReservation &tempReservation);
 void makeReservation(Reservation reservations[], int &reservationCount, bool &firstReservationMade);
+
+void clearBuffer(string datatypeExpected)
+{
+  cout << "You entered something that is not a" << datatypeExpected << ". Please Try again." << endl;
+  cin.clear();
+  cin.ignore(100, '\n');
+}
+
+void setCustomerName(TempReservation &tempReservation)
+{
+  cout << "Enter a name for the reservation: ";
+  cin.clear();
+  cin.ignore(100, '\n');
+  getline(cin, tempReservation.customerName);
+}
+
+void setNumberOfPeople(TempReservation &tempReservation)
+{
+  cout << "Enter the number of people in the party: ";
+  cin >> tempReservation.numberOfPeople;
+}
+
+void setReservationTime(TempReservation &tempReservation)
+{
+  cout << "Enter the time for the reservation in HH::MM AM/PM: ";
+  cin.clear();
+  cin.ignore(100, '\n');
+  getline(cin, tempReservation.reservationTime);
+}
+
+void getConfirmation(TempReservation &tempReservation, char &choice)
+{
+  cout << "Please confirm the reservation:";
+  cout << "Reservation Name: " << tempReservation.customerName << endl;
+  cout << "Reservation Time: " << tempReservation.reservationTime << endl;
+  cout << "Number in Party: " << tempReservation.numberOfPeople << endl;
+
+  cout << "Is this information correct [Y]es, [N]o (make changes), [C]ancel? ";
+  cin >> choice;
+  choice = tolower(choice);
+}
 
 // Function to make a reservation
 void makeReservation(Reservation reservations[], int &reservationCount, bool &firstReservationMade)
@@ -66,6 +112,7 @@ void makeReservation(Reservation reservations[], int &reservationCount, bool &fi
 
   Reservation newReservation;
   TempReservation tempReservation;
+  char choice;
 
   if (reservationCount >= 50)
   {
@@ -73,42 +120,16 @@ void makeReservation(Reservation reservations[], int &reservationCount, bool &fi
     return;
   }
 
-  cout << "Enter a name for the reservation: ";
-  cin.clear();
-  cin.ignore(100, '\n');
-  getline(cin, tempReservation.customerName);
-
-  cout << "Enter the number of people in the party: ";
-  cin >> tempReservation.numberOfPeople;
-
-  cout << "Enter the time for the reservation in HH::MM AM/PM: ";
-  cin.clear();
-  cin.ignore(100, '\n');
-  getline(cin, tempReservation.reservationTime);
-
-  /*Reservation Name: Louie Singleton
-Reservation Time: 07:30 PM
-Number in Party: 4
-Is this information correct [Y]es, [N]o (make changes), [C]ancel? */
-
-  // Get confirmation from the user
-  cout << "Please confirm the reservation:";
-  cout << "Reservation Name: " << tempReservation.customerName << endl;
-  cout << "Reservation Time: " << tempReservation.reservationTime << endl;
-  cout << "Number in Party: " << tempReservation.numberOfPeople << endl;
-
-  char choice;
-  cout << "Is this information correct [Y]es, [N]o (make changes), [C]ancel? ";
-  cin >> choice;
-  choice = tolower(choice);
+  setCustomerName(tempReservation);
+  setNumberOfPeople(tempReservation);
+  setReservationTime(tempReservation);
+  getConfirmation(tempReservation, choice);
 
   while (!cin || (choice != 'y' && choice != 'n' && choice != 'c'))
   {
     if (!cin)
     {
-      cout << "You entered something that is not a letter. Please Try again." << endl;
-      cin.clear();
-      cin.ignore(100, '\n');
+      clearBuffer("letter");
     }
 
     cout << "That is not a valid choice. Please choose [Y]es, [N]o, or [C]ancel." << endl;
@@ -116,20 +137,52 @@ Is this information correct [Y]es, [N]o (make changes), [C]ancel? */
     choice = tolower(choice);
   }
 
+  while (choice == 'n')
+  {
+
+    int changeChoice;
+    cout << "modifying..." << endl;
+
+    cout << "What do you want to change?" << endl;
+    cout << "1. Name" << endl;
+    cout << "2. Number of People" << endl;
+    cout << "3. Time" << endl;
+    cout << "4. Cancel" << endl;
+    cin >> changeChoice;
+
+    while (!cin || (changeChoice < 1 || changeChoice > 4))
+    {
+      if (!cin)
+      {
+        clearBuffer("number");
+      }
+
+      cout << "That is not a valid choice. Please choose between 1 and 4." << endl;
+      cin >> changeChoice;
+    }
+
+    switch (changeChoice)
+    {
+    case 1:
+      setCustomerName(tempReservation);
+      getConfirmation(tempReservation, choice);
+      break;
+    case 2:
+      setNumberOfPeople(tempReservation);
+      getConfirmation(tempReservation, choice);
+      break;
+    case 3:
+      setReservationTime(tempReservation);
+      getConfirmation(tempReservation, choice);
+      break;
+    case 4:
+      return;
+    }
+  }
+
   if (choice == 'c')
   {
     return;
-  }
-  else if (choice == 'n')
-  {
-    /*
-    What do you want to change?
-    1. Name
-    2. Number of People
-    3. Time
-    4. Cancel
-    */
-    cout << "modifying..." << endl;
   }
   else
   {

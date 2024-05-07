@@ -28,6 +28,7 @@ struct Reservation
   string customerName;
   int numberOfPeople;
   string reservationTime;
+  bool isCheckIn = false;
 };
 
 // Struct to save a reservation temporarily
@@ -84,6 +85,21 @@ void setNumberOfPeople(TempReservation &tempReservation)
 {
   cout << "Enter the number of people in the party: ";
   cin >> tempReservation.numberOfPeople;
+
+  while (!cin || tempReservation.numberOfPeople < 1 || tempReservation.numberOfPeople > 10)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+    else
+    {
+      cout << "The number of people in the party must be between 1 and 10." << endl;
+    }
+
+    cout << "Enter the number of people in the party: ";
+    cin >> tempReservation.numberOfPeople;
+  }
 }
 
 void setReservationTime(TempReservation &tempReservation)
@@ -141,7 +157,6 @@ void makeReservation(Reservation reservations[], int &reservationCount, bool &fi
   {
 
     int changeChoice;
-    cout << "modifying..." << endl;
 
     cout << "What do you want to change?" << endl;
     cout << "1. Name" << endl;
@@ -198,6 +213,73 @@ void makeReservation(Reservation reservations[], int &reservationCount, bool &fi
   }
 }
 
+void checkInReservation(Reservation reservations[], Table tables[], int &reservationCount, int &tableCount)
+{
+
+  int reservationChoice;
+
+  cout << "Choose the reservation to check in" << endl;
+
+  for (int i = 0; i < reservationCount; i++)
+  {
+    if (reservations[i].isCheckIn == false)
+    {
+      cout << i + 1 << ": " << reservations[i].customerName << " - " << reservations[i].reservationTime << ", " << reservations[i].numberOfPeople << " people" << endl;
+    }
+  }
+
+  cin >> reservationChoice;
+
+  while (!cin || (reservationChoice < 1 || reservationChoice > reservationCount))
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "That is not a valid choice. Please choose between 1 and " << reservationCount << endl;
+    cin >> reservationChoice;
+  }
+
+  int tableChoice;
+  cout << "Please assign a table:" << endl;
+
+  bool tableAvailable = false;
+  for (int i = 0; i < tableCount; i++)
+  {
+
+    if (!tables[i].isOccupied && tables[i].tableCapacity >= reservations[reservationChoice - 1].numberOfPeople)
+    {
+      tableAvailable = true;
+      cout << tables[i].tableNumber << ": " << tables[i].tableCapacity << " people" << endl;
+    }
+  }
+
+  if (!tableAvailable)
+  {
+    cout << "There are no open tables that will fit the party. Please complete some orders and have the customers pay their bills to free up tables." << endl;
+    return;
+  }
+
+  cin >> tableChoice;
+
+  while (!cin || (tableChoice < 1 || tableChoice > tableCount) || tables[tableChoice - 1].isOccupied || tables[tableChoice - 1].tableCapacity < reservations[reservationChoice - 1].numberOfPeople)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "That is not a valid choice. Try again." << endl;
+    cin >> tableChoice;
+  }
+
+  tables[tableChoice - 1].isOccupied = true;
+  tables[tableChoice - 1].numSeated = reservations[reservationChoice - 1].numberOfPeople;
+
+  reservations[reservationChoice - 1].isCheckIn = true;
+}
+
 int main()
 {
   Reservation reservations[50];
@@ -206,6 +288,36 @@ int main()
   int reservationCount = 0;
   int tableCount = 20;
   int orderCount = 0;
+
+  // The restaurant has 20 tables
+  // 1-8: 2 people
+  // 9-10: 10 people
+  // 11-14: 6 people
+  // 15-20: 4 people
+
+  for (int i = 0; i < 20; i++)
+  {
+    tables[i].tableNumber = i + 1;
+    tables[i].numSeated = 0;
+    tables[i].isOccupied = false;
+
+    if (i < 8)
+    {
+      tables[i].tableCapacity = 2;
+    }
+    else if (i < 10)
+    {
+      tables[i].tableCapacity = 10;
+    }
+    else if (i < 14)
+    {
+      tables[i].tableCapacity = 6;
+    }
+    else
+    {
+      tables[i].tableCapacity = 4;
+    }
+  }
 
   int choice;
   bool firstReservationMade = false;
@@ -234,6 +346,7 @@ int main()
       break;
     case 2:
       cout << "2 selected" << endl;
+      checkInReservation(reservations, tables, reservationCount, tableCount);
       break;
     case 3:
       cout << "3 selected" << endl;

@@ -1,7 +1,14 @@
+/* Program name: main.cpp
+ *  Author: Younghyun Lee
+ *  Date last updated: 5/6/2024
+ * Purpose: Resin Molds
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <iomanip>
+#include <cctype>
 
 using namespace std;
 
@@ -155,8 +162,11 @@ void enterOrder(orderType &order, moldType catalog[], int numItemsInCatalog)
         cin.clear();
         cin.ignore(100, '\n');
       }
+      else
+      {
+        cout << "That is not a valid choice. Please choose a product from the list above." << endl;
+      }
 
-      cout << "That is not a valid choice. Please choose the class by number from the list." << endl;
       cin >> selection;
     }
 
@@ -172,8 +182,23 @@ void enterOrder(orderType &order, moldType catalog[], int numItemsInCatalog)
       cout << "Do you want to add another product to the order?";
       cin >> choice;
       choice = tolower(choice);
-      cin.clear();
-      cin.ignore(100, '\n');
+
+      while (!cin || choice != 'y' && choice != 'n')
+      {
+        if (!cin)
+        {
+          cout << "Invalid input. Please enter 'y' to continue or 'n' to stop: ";
+          cin.clear();
+          cin.ignore(100, '\n');
+        }
+        else
+        {
+          cout << "That is not a valid entry.  Please enter y or n.";
+        }
+        cout << "Do you want to add another product to the order?";
+        cin >> choice;
+        choice = tolower(choice);
+      }
     }
     else
     {
@@ -188,7 +213,8 @@ void enterOrder(orderType &order, moldType catalog[], int numItemsInCatalog)
 // Function to print mold details
 void printProduct(ostream &out, moldType mold)
 {
-  out << mold.shape << " - " << sizeTypeToString(mold.size) << " $" << mold.price << " " << mold.weight << "g\n";
+  out << fixed << showpoint << setprecision(2);
+  out << mold.shape << " - " << sizeTypeToString(mold.size) << " $" << mold.price << " " << mold.weight << "g";
 }
 
 // Function to print order details
@@ -254,9 +280,18 @@ int main()
     cin.ignore(100, '\n');
     selection = tolower(selection);
 
-    while (selection != 'y' && selection != 'n') // Validate the input
+    while (!cin || selection != 'y' && selection != 'n') // Validate the input
     {
-      cout << "Invalid input. Please enter 'y' to continue or 'n' to stop: ";
+      if (!cin)
+      {
+        cout << "Invalid input. Please enter 'y' to continue or 'n' to stop: ";
+        cin.clear();
+        cin.ignore(100, '\n');
+      }
+      else
+      {
+        cout << "Invalid input. Please enter 'y' to continue or 'n' to stop: ";
+      }
       cin >> selection;
       cin.ignore(100, '\n');
       selection = tolower(selection);

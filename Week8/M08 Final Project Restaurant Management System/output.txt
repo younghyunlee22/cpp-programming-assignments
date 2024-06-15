@@ -1,0 +1,1361 @@
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+// Louie Singleton
+// 4
+// 07:30 PM
+Reservation Name: Louie Singleton
+Reservation Time: 07:30 PM
+Number in Party: 4
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? 
+// c
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+/*
+Neha Fuller
+5
+10:30 AM
+*/
+Reservation Name: Neha Fuller
+Reservation Time: 10:30 AM
+Number in Party: 5
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? 
+// y
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+/*
+Rahim Hull
+10
+07:00 PM
+*/
+Reservation Name: Rahim Hull
+Reservation Time: 07:00 PM
+Number in Party: 10
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? What do you want to change?
+// n
+1. Name
+2. Number of People
+3. Time
+4. Cancel
+// 3
+Enter the time for the reservation in HH::MM AM/PM: 
+// 10:00 AM
+Please confirm the reservation:
+Reservation Name: Rahim Hull
+Reservation Time: 10:00 AM
+Number in Party: 10
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? Welcome to Messijoes
+// y
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+/* Zarah Silva
+9
+03:00 PM
+*/
+Reservation Name: Zarah Silva
+Reservation Time: 03:00 PM
+Number in Party: 9
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? Welcome to Messijoes
+// y 
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+There are no orders to complete.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+There are no orders to complete.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+/*
+Mario Hartley
+9
+02:00 PM
+*/
+Reservation Name: Mario Hartley
+Reservation Time: 02:00 PM
+Number in Party: 9
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? Welcome to Messijoes
+// y
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+There are no orders to complete.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 2
+Choose the reservation to check in
+1: Neha Fuller - 10:30 AM, 5 people
+2: Rahim Hull - 10:00 AM, 10 people
+3: Zarah Silva - 03:00 PM, 9 people
+4: Mario Hartley - 02:00 PM, 9 people
+// 1
+Please assign a table:
+9: 10 people
+10: 10 people
+11: 6 people
+12: 6 people
+13: 6 people
+14: 6 people
+// 11
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+There are no orders to complete.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 2
+Choose the reservation to check in
+2: Rahim Hull - 10:00 AM, 10 people
+3: Zarah Silva - 03:00 PM, 9 people
+4: Mario Hartley - 02:00 PM, 9 people
+Please assign a table:
+// 2
+9: 10 people
+10: 10 people
+// 10
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+There are no orders to complete.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 5
+Choose the order to calculate the bill:
+There are no orders ready for payment
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+/*
+Barry Pham
+9
+10:30 PM
+*/Reservation Name: Barry Pham
+Reservation Time: 10:30 PM
+Number in Party: 9
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? What do you want to change?
+// N 
+1. Name
+2. Number of People
+3. Time
+4. Cancel
+// 1
+Enter a name for the reservation: 
+// Gabriella Clements
+Please confirm the reservation:
+Reservation Name: Gabriella Clements
+Reservation Time: 10:30 PM
+Number in Party: 9
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? Welcome to Messijoes
+// y
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+10: Table 10
+11: Table 11
+// 10
+Please choose entree number 1
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+// 14
+Please choose entree number 2
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+// 8
+Please choose entree number 3
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+// 11
+Please choose entree number 4
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+// 4
+Please choose entree number 5
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+// 10
+Please choose entree number 6
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 7
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 8
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 9
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 10
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+1: Table 10
+// 1
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+There are no orders to complete.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+11: Table 11
+Please choose entree number 1
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 2
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 3
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 4
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 5
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 1
+Enter a name for the reservation: Enter the number of people in the party: Enter the time for the reservation in HH::MM AM/PM: Please confirm the reservation:
+/*
+Sadie Levine
+9
+09:30 AM
+*/
+Reservation Name: Sadie Levine
+Reservation Time: 09:30 AM
+Number in Party: 9
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? What do you want to change?
+1. Name
+2. Number of People
+3. Time
+4. Cancel
+Enter the number of people in the party: Please confirm the reservation:
+Reservation Name: Sadie Levine
+Reservation Time: 09:30 AM
+Number in Party: 2
+Is this information correct [Y]es, [N]o (make changes), [C]ancel? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 3
+Please choose the table for the order: 
+There are no tables without orders.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+// 4
+Choose the order to complete:
+2: Table 11
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the reservation to check in
+3: Zarah Silva - 03:00 PM, 9 people
+4: Mario Hartley - 02:00 PM, 9 people
+5: Gabriella Clements - 10:30 PM, 9 people
+6: Sadie Levine - 09:30 AM, 2 people
+Please assign a table:9: 10 people
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the reservation to check in
+4: Mario Hartley - 02:00 PM, 9 people
+5: Gabriella Clements - 10:30 PM, 9 people
+6: Sadie Levine - 09:30 AM, 2 people
+Please assign a table:1: 2 people
+2: 2 people
+3: 2 people
+4: 2 people
+5: 2 people
+6: 2 people
+7: 2 people
+8: 2 people
+12: 6 people
+13: 6 people
+14: 6 people
+15: 4 people
+16: 4 people
+17: 4 people
+18: 4 people
+19: 4 people
+20: 4 people
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the reservation to check in
+4: Mario Hartley - 02:00 PM, 9 people
+5: Gabriella Clements - 10:30 PM, 9 people
+Please assign a table:There are no open tables that will fit the party. Please complete some orders and have the customers pay their bills to free up tables.
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to calculate the bill:
+1: Table 10
+2: Table 11
+Here is the bill for table 10
+Fish and Chips - $77.00
+Faux BLT - $42.00
+Cheese Pizza - $59.00
+Hamburger Sliders - $38.00
+Falafel Wrap - $42.00
+Veggie Sliders - $38.00
+Hamburger Sliders - $38.00
+Cheese Pizza - $59.00
+Fried Chicken Sliders - $38.00
+Falafel Wrap - $42.00
+Subtotal: $473.00
+Tip: $94.60
+Tax: $47.30
+Total: $614.90
+Pay Bill? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the reservation to check in
+4: Mario Hartley - 02:00 PM, 9 people
+5: Gabriella Clements - 10:30 PM, 9 people
+Please assign a table:10: 10 people
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to calculate the bill:
+2: Table 11
+Here is the bill for table 11
+BLT - $42.00
+Chicken Burrito - $42.00
+Pepperoni Pizza - $59.00
+Faux BLT - $42.00
+Hamburger - $45.00
+Subtotal: $230.00
+Tip: $46.00
+Tax: $23.00
+Total: $299.00
+Pay Bill? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Please choose the table for the order: 
+3: Table 3
+9: Table 9
+10: Table 10
+Please choose entree number 1
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 2
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Please choose the table for the order: 
+9: Table 9
+10: Table 10
+Please choose entree number 1
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 2
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 3
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 4
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 5
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 6
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 7
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 8
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 9
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to complete:
+3: Table 3
+4: Table 9
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Please choose the table for the order: 
+10: Table 10
+Please choose entree number 1
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 2
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 3
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 4
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 5
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 6
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 7
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 8
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 9
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to complete:
+4: Table 9
+5: Table 10
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to complete:
+5: Table 10
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to calculate the bill:
+3: Table 3
+4: Table 9
+5: Table 10
+Here is the bill for table 10
+Faux BLT - $42.00
+Cheese Pizza - $59.00
+Falafel Wrap - $42.00
+Pepperoni Pizza - $59.00
+Chicken Burrito - $42.00
+Hamburger Sliders - $38.00
+Faux Meat and Chips - $77.00
+Hamburger - $45.00
+Haddock Sandwich - $38.00
+Subtotal: $442.00
+Tip: $88.40
+Tax: $44.20
+Total: $574.60
+Pay Bill? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to calculate the bill:
+3: Table 3
+4: Table 9
+Here is the bill for table 3
+Pepperoni Pizza - $59.00
+Faux Meat and Chips - $77.00
+Subtotal: $136.00
+Tip: $27.20
+Tax: $13.60
+Total: $176.80
+Pay Bill? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to calculate the bill:
+4: Table 9
+Here is the bill for table 9
+Falafel Wrap - $42.00
+Falafel Wrap - $42.00
+Fried Chicken Sliders - $38.00
+Fried Chicken Sliders - $38.00
+Cheese Pizza - $59.00
+Chicken Burrito - $42.00
+BLT - $42.00
+Haddock Sandwich - $38.00
+Faux Meat and Chips - $77.00
+Subtotal: $418.00
+Tip: $83.60
+Tax: $41.80
+Total: $543.40
+Pay Bill? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the reservation to check in
+5: Gabriella Clements - 10:30 PM, 9 people
+Please assign a table:9: 10 people
+10: 10 people
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Please choose the table for the order: 
+9: Table 9
+Please choose entree number 1
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 2
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 3
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 4
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 5
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 6
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 7
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 8
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Please choose entree number 9
+1: Veggie Burger
+2: Hamburger
+3: Fried Chicken Sliders
+4: Hamburger Sliders
+5: Veggie Sliders
+6: Haddock Sandwich
+7: BLT
+8: Faux BLT
+9: Chicken Burrito
+10: Falafel Wrap
+11: Cheese Pizza
+12: Pepperoni Pizza
+13: Faux Meat and Chips
+14: Fish and Chips
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to complete:
+6: Table 9
+Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+Choose the order to calculate the bill:
+6: Table 9
+Here is the bill for table 9
+Faux BLT - $42.00
+Cheese Pizza - $59.00
+Falafel Wrap - $42.00
+Pepperoni Pizza - $59.00
+Chicken Burrito - $42.00
+Hamburger Sliders - $38.00
+Faux Meat and Chips - $77.00
+Hamburger - $45.00
+Haddock Sandwich - $38.00
+Subtotal: $442.00
+Tip: $88.40
+Tax: $44.20
+Total: $574.60
+Pay Bill? Welcome to Messijoes
+1. Make Reservation
+2. Check-in Reservation
+3. Enter Order
+4. Complete Order
+5. Calculate and Pay Bill
+6. Close Restaurant

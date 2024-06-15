@@ -383,6 +383,26 @@ void checkInReservation(Reservation reservations[], Table tables[], int &reserva
   }
   cin >> reservationChoice;
 
+  // input validation
+  while (!cin || reservationChoice < 1 || reservationChoice > reservationCount)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "That is not a valid choice." << endl;
+    cout << "Choose the reservation to check in" << endl;
+    for (int i = 0; i < reservationCount; i++)
+    {
+      if (!reservations[i].isCheckedIn)
+      {
+        cout << i + 1 << ": " << reservations[i].customerName << " - " << reservations[i].reservationTime << ", " << reservations[i].numberOfPeople << " people" << endl;
+      }
+    }
+    cin >> reservationChoice;
+  }
+
   int tableChoice;
   cout << "Please assign a table:";
 
@@ -407,6 +427,26 @@ void checkInReservation(Reservation reservations[], Table tables[], int &reserva
   }
 
   cin >> tableChoice;
+
+  // input validation
+  while (!cin || tableChoice < 1 || tableChoice > tableCount || tables[tableChoice - 1].isOccupied || tables[tableChoice - 1].tableCapacity < reservations[reservationChoice - 1].numberOfPeople)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "That is not a valid choice." << endl;
+
+    for (int i = 0; i < tableCount; i++)
+    {
+      if (!tables[i].isOccupied && tables[i].tableCapacity >= reservations[reservationChoice - 1].numberOfPeople)
+      {
+        cout << tables[i].tableNumber << ": " << tables[i].tableCapacity << " people" << endl;
+      }
+    }
+    cin >> tableChoice;
+  }
 
   // assign the table to the reservation
   tables[tableChoice - 1].isOccupied = true;
@@ -449,6 +489,26 @@ void enterOrder(Table tables[], Order orders[], int &tableCount, int &orderCount
 
   cin >> tableChoice;
 
+  // input validation
+  while (!cin || tableChoice < 1 || tableChoice > tableCount || !tables[tableChoice - 1].isOccupied || tables[tableChoice - 1].hasOrdered)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "That is not a valid choice." << endl;
+
+    for (int i = 0; i < tableCount; i++)
+    {
+      if (tables[i].isOccupied && !tables[i].hasOrdered)
+      {
+        cout << tables[i].tableNumber << ": Table " << tables[i].tableNumber << endl;
+      }
+    }
+    cin >> tableChoice;
+  }
+
   // set up a new order struct
   Order newOrder;
   newOrder.tableNumber = tableChoice - 1;
@@ -464,6 +524,20 @@ void enterOrder(Table tables[], Order orders[], int &tableCount, int &orderCount
     cout << prompt << i + 1 << endl;
     showMenuItems();
     cin >> menuChoice;
+
+    // input validation
+    while (!cin || menuChoice < 1 || menuChoice > 14)
+    {
+      if (!cin)
+      {
+        clearBuffer("number");
+      }
+
+      cout << "That is not a valid choice" << endl;
+      cout << prompt << i + 1 << endl;
+      showMenuItems();
+      cin >> menuChoice;
+    }
 
     // save the enum chosen to the menuItems array in the order struct
     newOrder.menuItems[i] = static_cast<MenuItem>(menuChoice - 1);
@@ -501,6 +575,28 @@ void completeOrder(Order orders[], Table tables[], int &tableCount, int &orderCo
   }
 
   cin >> orderIndex;
+
+  // input validation
+  while (!cin || orderIndex < 1 || orderIndex > orderCount || orders[orderIndex - 1].isComplete)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "That is not a valid choice." << endl;
+    cout << "Choose the order to complete:" << endl;
+
+    for (int i = 0; i < orderCount; i++)
+    {
+      if (!orders[i].isComplete)
+      {
+        cout << i + 1 << ": Table " << orders[i].tableNumber + 1 << endl;
+      }
+    }
+    cin >> orderIndex;
+  }
+
   // mark the order as complete
   orders[orderIndex - 1].isComplete = true;
 }
@@ -531,6 +627,26 @@ void calculateAndPayBill(Table tables[], Order orders[], int &orderCount)
   }
 
   cin >> orderIndex;
+
+  // input validation
+  while (!cin || orderIndex < 1 || orderIndex > orderCount || !orders[orderIndex - 1].isComplete || orders[orderIndex - 1].isPaid)
+  {
+    if (!cin)
+    {
+      clearBuffer("number");
+    }
+
+    cout << "Choose the order to calculate the bill:" << endl;
+
+    for (int i = 0; i < orderCount; i++)
+    {
+      if (orders[i].isComplete && !orders[i].isPaid)
+      {
+        cout << i + 1 << ": Table " << orders[i].tableNumber + 1 << endl;
+      }
+    }
+    cin >> orderIndex;
+  }
 
   // show the bill for the table and calculate the bill
   cout << "Here is the bill for table " << orders[orderIndex - 1].tableNumber + 1 << endl;
@@ -567,6 +683,20 @@ void calculateAndPayBill(Table tables[], Order orders[], int &orderCount)
   cout << "Pay Bill?";
   cin >> payBillChoice;
   payBillChoice = tolower(payBillChoice);
+
+  // input validation
+  while (!cin || (payBillChoice != 'y' && payBillChoice != 'n'))
+  {
+    if (!cin)
+    {
+      clearBuffer("letter");
+    }
+
+    cout << "Enter y or n." << endl;
+    cout << "Pay Bill?";
+    cin >> payBillChoice;
+    payBillChoice = tolower(payBillChoice);
+  }
 
   // if the user wants to pay the bill
   if (payBillChoice == 'y')
